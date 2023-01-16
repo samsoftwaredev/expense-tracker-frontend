@@ -6,3 +6,5 @@ export { default as AddProject } from "./AddProject";
 export { default as TabPanel } from "./TabPanel";
 export { default as ExpensesList } from "./ExpensesList";
 export { default as Expenses } from "./Expenses";
+export { default as Landing } from "./Landing";
+export { default as Dashboard } from "./Dashboard";

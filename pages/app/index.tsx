@@ -1,11 +1,11 @@
-import { Meta } from "../../components";
+import { Dashboard, Meta } from "../../components";
 import { MainLayout } from "../../layouts";
 
 const App = () => {
   return (
     <MainLayout>
       <Meta pageTitle="App" />
-      This is the app
+      <Dashboard />
     </MainLayout>
   );
 };

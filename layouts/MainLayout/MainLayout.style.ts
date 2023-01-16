@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
 import {
   STYLES_COLOR_DANGER,
+  STYLES_COLOR_DARK,
   STYLES_COLOR_LIGHT,
-  STYLES_COLOR_WARNING,
   STYLES_DESKTOP_VIEW,
+  STYLES_GRADIENTS,
   STYLES_SIDEBAR_OPEN,
 } from "../../constants";
 
@@ -15,21 +16,27 @@ export const Container = styled.div`
     margin: 0;
     padding: 0;
     width: 0;
-    background-color: ${STYLES_COLOR_WARNING};
+    background: ${STYLES_GRADIENTS};
     height: 100%;
     position: fixed;
     overflow: auto;
     transition: 0.3s;
     z-index: 1500;
+    font-weight: 900;
     @media (min-width: ${STYLES_DESKTOP_VIEW}) {
       width: ${STYLES_SIDEBAR_OPEN};
+    }
+    ul {
+      list-style: none;
+    }
+    a {
+      color: ${STYLES_COLOR_DARK};
     }
   }
 
   .content {
     width: 100%;
     margin-left: 0;
-    background-color: ${STYLES_COLOR_LIGHT};
     @media (min-width: ${STYLES_DESKTOP_VIEW}) {
       margin-left: ${STYLES_SIDEBAR_OPEN};
     }

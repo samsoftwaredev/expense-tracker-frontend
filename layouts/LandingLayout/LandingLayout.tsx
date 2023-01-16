@@ -3,7 +3,7 @@ interface Props {
 }
 
 const LandingLayout = ({ children }: Props) => {
-  return <main>{children}</main>;
+  return <>{children}</>;
 };
 
 export default LandingLayout;

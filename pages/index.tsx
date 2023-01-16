@@ -1,12 +1,11 @@
-import Link from "next/link";
-import { Meta } from "../components";
+import { Meta, Landing } from "../components";
 import { LandingLayout } from "../layouts";
 
 const Home = () => {
   return (
     <LandingLayout>
       <Meta />
-      <Link href="/app">Go to app</Link>
+      <Landing />
     </LandingLayout>
   );
 };

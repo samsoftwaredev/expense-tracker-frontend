@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import SelectSearch from "react-select-search";
 import "react-select-search/style.css";
 import { useQuery } from "react-query";
@@ -9,6 +9,7 @@ import AddProject from "../AddProject";
 import Expenses from "../Expenses";
 import { getAllProjects } from "../../utils";
 import { INTERFACE_EXPENSE, INTERFACE_PROJECT_LIST } from "../../constants";
+import { Container } from "./ProjectExpenses.style";
 
 const projectObjToArr = (data: INTERFACE_EXPENSE) => {
   return Object.keys(data).map((key) => {
@@ -66,21 +67,23 @@ const ProjectExpenses = () => {
   }
 
   return (
-    <>
+    <Container>
       <Typography variant="h3" gutterBottom>
         Project Expenses
       </Typography>
-      <SelectSearch
-        onChange={handleSelect}
-        options={projects}
-        debounce={250}
-        emptyMessage="No match"
-        closeOnSelect
-        placeholder="Search Project"
-        search
-      />
+      <Box className="search-box">
+        <SelectSearch
+          onChange={handleSelect}
+          options={projects}
+          debounce={250}
+          emptyMessage="No match"
+          closeOnSelect
+          placeholder="Search Project"
+          search
+        />
+      </Box>
       <Tabs list={tabs} tabName={projectName} />
-    </>
+    </Container>
   );
 };
 
