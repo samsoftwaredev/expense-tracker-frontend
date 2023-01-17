@@ -30,10 +30,10 @@ const AddProject = () => {
     try {
       mutation.mutate(values);
       setErrorState(false);
+      resetForm();
     } catch (error) {
       setErrorState(true);
     } finally {
-      resetForm();
       setSubmitting(false);
     }
   };
