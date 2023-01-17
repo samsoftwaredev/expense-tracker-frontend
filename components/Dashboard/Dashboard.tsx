@@ -18,10 +18,10 @@ const Dashboard = () => {
         It took me about 8 hours in total to develop this application. I worked
         both on the front end and the back end. The thing that took me the most
         time was organizing the code in a way that is very modular and easy to
-        update. I didn't include any fancy animation because developing the
+        update. I didn&#39;t include any fancy animation because developing the
         entire application is very time-consuming. However, this goes to show
-        that I'm able to work efficiently in both the FE and BE. Although I love
-        working on the FE, I mainly focus my effort on the BE this time.
+        that I&#39;m able to work efficiently in both the FE and BE. Although I
+        love working on the FE, I mainly focus my effort on the BE this time.
       </Typography>
     </Container>
   );
